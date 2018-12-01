@@ -1,0 +1,188 @@
+  .nothing {
+      color: #000b4f;
+      color: #20368f;
+      color: #829cd0;
+      color: #ebebeb;
+      color: #6d6d6d;
+      color: #323232;
+  }
+
+  @media screen and (orientation: portrait) {
+    .page-title-div {
+      color: #323232;
+      text-align: center;
+      padding-top: 10vh;
+    }
+
+    #attacks {
+      padding-top: 10vh;
+      height: 200vh;
+      margin: 0;
+      text-align: center;
+      width: 100%;
+      display: inline-block;
+    }
+  
+    .attack-flex {
+      float: top;
+      background-color: #6d6d6d;
+      text-align: center;
+      padding: 1rem;
+      margin: 1rem;
+    }
+
+    #the-third-one {
+      display: block;
+      overflow: auto;
+    }
+
+    #the-fourth-one {
+      display: block;
+      overflow: auto;
+    }
+
+    #protect-flex-container {
+      flex-direction: column;
+    }
+
+    .protect-flex {
+      max-width: 80%;
+    }
+  }
+  
+  @media screen and (orientation: landscape) {
+    .page-title-div {
+      color: #323232;
+      padding: 30vh;
+      text-align: center;
+    }
+
+    #attacks {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 10vh;
+    }
+  
+    .attack-flex {
+      background-color: #6d6d6d;
+      padding: 1rem;
+      max-width: 25vw;
+      min-width: 25vw;
+    }
+
+
+    #protect-flex-container {
+      flex-direction: row;
+    }
+
+    .protect-flex {
+      max-width: 30%;
+    }
+  }
+
+  html, body {
+    margin: 0;
+    font-family: roboto;
+  }
+  
+  .full-page-div {
+    padding-top: 0px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #the-first-one {
+    background-image: linear-gradient(90deg, #000b4f, #ebebeb);
+  }
+
+  #the-second-one {
+      background-image: linear-gradient(90deg, #6d6d6d, #20368f);
+  }
+
+  #the-third-one {
+      background-color: #ebebeb;
+      display: block;
+      overflow: auto;
+  }
+
+  #the-fourth-one {
+    background-color: #829cd0;
+    display: grid;
+    grid-template-rows: auto;
+    overflow: auto;
+  }
+
+  #the-fifth-one {
+    background-color: #000b4f;
+  }
+  
+  .page-intro-text {
+    font-stretch: expanded;
+    font-weight: thin;
+    font-size: 300%;
+    margin: 0;
+  }
+
+  .main-page-big-text {
+    font-stretch: expanded;
+    font-weight: thin;
+    font-size: 300%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .main-page-medium-text {
+    font-size: 130%;
+    margin: 0;
+    padding: 1rem;
+    color: #6d6d6d;
+  }
+
+  .attack-name {
+    margin: 0;
+  }
+
+  .attack-subtitle {
+    color: #ebebeb;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  #fourth-page-text1 {
+    background-color: #ebebeb;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+  /* #fourth-page-top {
+    height: 30%;
+  } */
+
+  #examples {
+    color: #323232;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  #examples p {
+    margin: 0.5rem;
+    background-color: #20368f;
+  }
+
+  #protect-flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .protect-flex {
+    background-color: #ebebeb;
+    padding: 1vh 3vw;
+  }
+
+  .protect-flex-header {
+    color: #323232;
+  }

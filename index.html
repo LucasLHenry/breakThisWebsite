@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,intital-scale=1.0" />
+      <title>Break This Website</title>
+      <script type="text/javascript" src="jquery.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <!-- <link rel="stylesheet" type="text/css" href="skeleton.css" /> -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+    <body>
+        <div class="full-page-div" id="the-first-one">
+          <div class="page-title-div">
+            <p class="page-intro-text">this website is unsafe</p>
+          </div>
+        </div>
+        <div class="full-page-div" id="the-second-one">
+            <div class="page-title-div">
+              <p class="page-intro-text">you can break it</p>
+            </div>
+        </div>
+        <div class="full-page-div" id="the-third-one">
+            <h1 class="main-page-big-text">Everyone has heard of unsafe websites, but what does it actually mean?</h1>
+            <p class="main-page-medium-text">
+              If a website is "unsafe", that tipically means it is vulnerable to at least one of these types of attacks.
+            </p>
+            <div id="attacks">
+              <div id="SQLi" class="attack-flex">
+                <h4 class="attack-name">SQLi</h4>
+                <h6 class="attack-subtitle">(structured query language injection)</h6>
+                <p class="attack-p">
+                  Manipulation of items in a database using a coding language called SQL. This
+                  abuses the vulnerability of making the computer think that your search is not just text, but actual
+                  instructions. This primarily affects the server and not the users, but it can be made to also affect users.
+                </p>
+              </div>
+              <div id="CSRF" class="attack-flex">
+                <h4 class="attack-name">CSRF</h4>
+                <h6 class="attack-subtitle">(cross site request forgery)</h6>
+                <p class="attack-p">
+                  Tricking a user into submitting a malicious request to a website that requires credentials by using
+                  those already obtained by logging in to the website. This can be done by making a link that does the 
+                  malicious action and tricking the victim into clicking on it.
+                </p>
+              </div>
+              <div id="XSS" class="attack-flex">
+                <h4 class="attack-name">XSS</h4>
+                <h6 class="attack-subtitle">(cross site scripting)</h6>
+                <p class="attack-p">
+                  Injecting malicious javascript through user input into an average website to be executed as part of the it.
+                  It is usually inputed through normal input fields, and can sometimes corrupt the entire website. This is only
+                  doable if the website does not implement proper input sanitization.
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="full-page-div" id="the-fourth-one">
+          <div id="fourth-page-top">
+            <h1 class="main-page-big-text">Why does this matter to you?</h1>
+            <p class="main-page-medium-text" id="fourth-page-text1">
+              The fact is that bad web security effects everyone, and the best way to protect yourself is to learn how it works
+            </p>
+          </div>
+          <div id="examples">
+              <p class="main-page-medium-text">
+                If you use an online store vulnerable to SQLi, any attacker could steal your username, password, credit card number, 
+                and everything you've every purchased with only one line of code.
+              </p>
+              <p class="main-page-medium-text">
+                If you have an account at a bank, and their website is vulnerable to CSRF, your entire balance could be solen and your account
+                deleted just by clicking a link.
+              </p>
+              <p class="main-page-medium-text">
+                If you're on a blog that's vulnerable to XSS and someone happens to have written a comment that uses XSS, you
+                could be redirected to a fake website that tricks you into giving up valuable infromation without you even knowing
+                anything has happened. 
+              </p>
+          </div>
+        </div>
+        <div class="full-page-div" id="the-fifth-one">
+          <h1 class="main-page-big-text" style="color: #ebebeb;">
+            How can you protect yourself?
+          </h1>
+          <p class="main-page-medium-text">
+            There are lots of things to look for on an unsafe website, here are some of them:
+          </p>
+          <div id="protect-flex-container">
+            <div class="protect-flex" id="general">
+              <header id="general-header" class="protect-flex-header">
+                <h1 id="general-h1" class="protect-h1">General</h1>
+              </header>
+              <div id="general-body">
+                <ul>
+                  <li>Look for <code>https</code> instead of <code>http</code> in the url bar. That means that
+                  all the information you send to the website is encrypted (scrambled in a special way) so that
+                  no one else can understand it.</li>
+                  <li>Look for the lock &#x1F512<!--Unicode Lock--> symbol in the address bar. That means that the
+                  website is using the proper security standards. Note: this does <u>not</u> guarrantee that a website
+                  is safe. There have been examples of malicious websites that still get the lock icon.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="protect-flex" id="specific-to-attacks">
+              <header id="specific-header" class="protect-flex-header">
+                <h1 id="specific-h1" class="protect-h1">Specific</h1>
+                
+              </header>
+            </div>
+          </div>
+        </div>
+    </body>
+  </html>
